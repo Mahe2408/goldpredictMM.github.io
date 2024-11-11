@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Rate Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-line">
+        <h1 class="header-title">GOLDPREDICTS</h1>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Website</h1>
+            <p class="welcome-message">Predict Your Investments in Gold</p>
+        </header>
+
+        <section class="prediction-form">
+            <h2>Predict Future Gold Price</h2>
+            <form id="predictionForm">
+                <label for="date">Select Date for Prediction:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Predict Price</button>
+            </form>
+        </section>
+
+        <!-- Today's Price Section -->
+        <section class="current-price">
+            <h2>Today's Gold Price</h2>
+            <p><strong>₹8024 per gram</strong></p>
+            <p><strong>₹72360 per pavan</strong> (1 pavan = 8 grams)</p>
+            <p><strong>₹354720 per pound</strong> (1 pound = 453.6 grams)</p>
+        </section>
+
+        <section class="result">
+            <h2>Predicted Price:</h2>
+            <p>In Grams: <span id="predictedPriceGram">--</span></p>
+            <p>In Pavan: <span id="predictedPricePavan">--</span></p>
+            <p>In Pounds: <span id="predictedPricePound">--</span></p>
+        </section>
+
+        <!-- Contact Us Button -->
+        <div class="contact-us">
+            <button onclick="window.location.href='mailto:contact@yourdomain.com'">Contact Us</button>
+        </div>
+        
+        <!-- Current Date and Time -->
+        <footer>
+            <div id="dateTime"></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
